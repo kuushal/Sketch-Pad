@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+        <div class="flex-container">
+            <h1>Sketch Pad</h1>
+            <div class="mode">Mode: Colouring</div>
+
+            <div class="content">
+                <div class="board"></div>
+                
+                <div class="buttons">
+                    <button class="btn" onclick="changeColor('black')">Black</button>
+                    <button class="btn" onclick="changeColor('random')">Rainbow</button>
+                    <button class="btn" onclick="changeColor('white')">Erasor</button>
+                    <button class="btn" onclick="resetBoard()">Reset</button>
+                </div>
+
+                <input type="text" placeholder="Size of the pad" value="0" onchange="changeSize(this.value)">
+                <button class="btn">Set Size</button>
+
+            </div>
+
+
+            <div class="message">Please enter value between 2 and 100</div>
+        </div>    
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
